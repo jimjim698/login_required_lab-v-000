@@ -9,8 +9,12 @@ class SessionsController < ApplicationController
       redirect_to login_path
     else 
       session[:name] = params[:name]
-      redirect_to 
+      redirect_to sessions_welcome_path
     end 
+  end 
+  
+  
+  def welcome 
   end 
   
   
