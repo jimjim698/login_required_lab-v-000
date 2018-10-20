@@ -12,9 +12,7 @@ class SessionsController < ApplicationController
   private
   
   def require_login
-    if !current_user 
-      redirect_to login_path 
-    end 
+      redirect_to login_path unless current_user
   end 
     
   
