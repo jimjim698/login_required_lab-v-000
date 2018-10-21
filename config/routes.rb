@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   post '/sessions/create'
   get '/login' => 'sessions#new'
   get '/sessions/welcome'
-  get '/'
+  post '/'
   
   
   
