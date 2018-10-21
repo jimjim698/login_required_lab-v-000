@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/login' => 'sessions#new'
   get '/sessions/welcome'
   post '/logout'=> 'sessions#destroy'
+  get '/secrets/top_secret'
   
   
   
