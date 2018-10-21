@@ -3,3 +3,8 @@ Welcome <%=session[:name]%>
 <%=link_to "Top Secret", secrets_top_secret_path%>
 <br>
 <%=link_to "Log Out", logout_path%>
+
+<%=form_tag ({controller: 'sessions', action: 'destroy', method: 'post'}) do %>
+<input type= 'hidden'>
+<input type= 'submit' value= 'logout'>
+<%end%>
